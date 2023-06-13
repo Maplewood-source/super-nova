@@ -52,7 +52,7 @@
                                 替换为
                             </n-button>
                             <!--              placeholder="为空则表示删除"-->
-                            <n-input :style="{ width: '50%' }"  v-model:value="item.replaceKeyword" />
+                            <n-input :style="{ width: '50%' }"  placeholder="为空则表示删除"  v-model:value="item.replaceKeyword" />
                             <n-button type="primary" ghost @click="deleteRules(item)">删除规则</n-button>
                         </n-input-group>
                     </div>
@@ -62,7 +62,7 @@
         <n-gi :span="4">
             <n-card title="保存方式">
                 <n-space>
-                    <n-radio name="save-type" :value="0" :checked="saveType===0" @change="saveTypeChangeHandler">另存为副本1</n-radio>
+                    <n-radio name="save-type" :value="0" :checked="saveType===0" @change="saveTypeChangeHandler">另存为副本</n-radio>
                     <n-radio name="save-type" :value="1" :checked="saveType===1"  @change="saveTypeChangeHandler">覆盖源文件</n-radio>
                 </n-space>
                 <n-space vertical justify="center" v-show="saveType===0">

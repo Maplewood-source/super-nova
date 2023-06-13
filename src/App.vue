@@ -1,11 +1,11 @@
 <template>
     <n-message-provider>
-        <HelloWorld />
+        <Replace />
     </n-message-provider>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import Replace from "./components/Replace.vue";
 import { NMessageProvider } from 'naive-ui'
 </script>
 <style>
