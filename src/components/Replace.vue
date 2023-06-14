@@ -11,9 +11,7 @@
                 >
                     <n-upload-dragger>
                         <div style="margin-bottom: 12px">
-                            <n-icon size="48" :depth="3">
-                                <archive-icon />
-                            </n-icon>
+                            <n-icon size="48" :depth="3"></n-icon>
                         </div>
                         <n-text style="font-size: 16px">
                             点击或者拖动文件到该区域来上传
@@ -80,7 +78,8 @@
 </template>
 
 <script setup lang="ts">
-import {UploadCustomRequestOptions,UploadFileInfo,UploadInst,useMessage } from "naive-ui";
+import {UploadCustomRequestOptions,UploadFileInfo,UploadInst,useMessage} from "naive-ui";
+import {NButton,NIcon,NText,NP,NUploadDragger,NUpload,NCard,NGi,NSpace,NCheckbox,NInput,NInputGroup,NRadio,NProgress,NGrid} from "naive-ui";
 import {rep} from "../../electron/main/replace";
 import {ref} from "vue";
 import {openFileDialog } from '../../electron/preload/index'
