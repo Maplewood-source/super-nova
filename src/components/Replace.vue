@@ -7,7 +7,7 @@
                         directory-dnd
                         :custom-request="customRequest"
                         :on-remove="fileRemove"
-                        :file-list="fileList"
+                        v-model:file-list="fileList"
                 >
                     <n-upload-dragger>
                         <div style="margin-bottom: 12px">
